@@ -2,7 +2,7 @@ var React = require('react');
 var Mainpage = require('./mainpagge');
 
 var options = {
-	logo_img: 'img/logo4.jpg'
+	logo_img: 'img/logo1.jpg'
 
 };
 
