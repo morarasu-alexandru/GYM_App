@@ -20,7 +20,7 @@
     <favorites_list name="Gym app" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.40458488">
       <split-first>
         <leaf>
           <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
@@ -59,7 +59,7 @@
                 <state vertical-scroll-proportion="0.0">
                   <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
                   <folding>
-                    <marker date="1449365244998" expanded="true" signature="326:1017" placeholder="{...}" />
+                    <marker date="1449367742539" expanded="true" signature="373:1064" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -72,8 +72,8 @@
           <file leaf-file-name="mainpagge.jsx" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/mainpagge.jsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.23978202">
-                  <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+                <state vertical-scroll-proportion="0.71934605">
+                  <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
                   <folding />
                 </state>
               </provider>
@@ -369,8 +369,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mainpagge.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23978202">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.71934605">
+          <caret line="23" column="43" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
           <folding />
         </state>
       </provider>

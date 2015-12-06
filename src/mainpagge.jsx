@@ -4,12 +4,12 @@ var Button_logo = require('./button_logo');
 module.exports = React.createClass({
 
 	handleClick: function() {
-		this.setState(
-			function(previousState) {
+		if(this.state.logo_img<4) {this.setState(
+			function (previousState) {
 				return {logo_img: previousState.logo_img + 1};
+
 			}
-			//{logo_img: 3}
-		);
+		)} else { this.setState({logo_img: 1})}
 	},
 	getInitialState: function(){
 	return {logo_img: 1}
