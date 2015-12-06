@@ -1,6 +1,7 @@
 $header-color: #f7faff;
 $logo-color: #293b5a;
-$nav_text_color: #7b96c4;
+
+$nav_text_color: #aad398;
 $nav_text_hover: #55e4d4;
 $nav_text_active: #57fae8;
 
@@ -17,17 +18,22 @@ $main_margin_low: 5%;
 	@media(min-width: 1100px) { margin: 0 $main_margin_mediu 0 $main_margin_mediu}
 	@media(min-width: 1300px) { margin: 0 $main_margin_high 0 $main_margin_high; }
 }
-	.header { display: block; width: 100%; height: 270px; background: #21324f;
+	.header { display: block; float: left; width: 100%; height: 270px; background: #21324f;
 	}
-		.logo { display: block; float: left; width: 330px; background: $logo-color;
+		.logo { display: block; float: left; width: 330px; margin: 0 0 0 calc(50% - 165px); background: $logo-color;
+			@media(min-width: 1200px) { float: left; margin: 0 0 0 0; }
 		.img {display: block; margin: 0 auto;}
 		}
-		.banner { display: block; float: right; height: 220px; width: calc(100% - 330px); background: $header-color;
+		.banner { display: none; float: right; height: 220px; width: calc(100% - 330px); background: $header-color;
+			@media(min-width: 1200px){ display: block; }
 			.img { display: none; margin: 0 auto;
 			@media(min-width: 1200px) {display: block;}}
 		}
-		.button { display: block; float: left; margin: 10px 0 0 100px; width: 130px; height: 30px; }
-	.nav { display: block; float: left; clear: both; width: 330px; height: 700px; background: $logo-color;}
+		.button { display: block; float: left; clear: both; margin: 10px 0 0 40px; width: 130px; height: 30px; color: $nav_text_active; }
+	.nav { display: block; float: left; clear: both; width: 210px; height: 710px; background: $logo-color; transition: all 0.333s ease-in-out 0s;
+	@media (min-width: 900px) { width: 250px;}
+	@media (min-width: 1100px) { width: 330px; }
+	}
 		.nav_ul { display: block; margin: 20px 0 0 0;}
 			.nav_li {display: block; margin: 15px 0 0 0;  text-underline: none;
 				.a {font-size: 24px; text-decoration: none; color: $nav_text_color; transition: all 0.333s ease-in-out 0s;
@@ -36,4 +42,12 @@ $main_margin_low: 5%;
 				}
 			}
 
-	.section_right { display: block; float: right; width: 200px; height: 700px; background: red; }
+	.section_right { display: none; float: right; width: 200px; height: 700px; margin: 10px 0 0 0; background: red;
+	@media (min-width: 1200px) { display: block; }
+	}
+
+	.addworkoutHistory { display: block; width: calc(100% - 230px); margin: 10px 10px 0 10px; height: 700px; float: left; background: green; transition: all 0.333s ease-in-out 0s;
+		@media(min-width: 900px) { width: calc(100% - 270px);}
+	@media(min-width: 1100px) { width: calc(100% - 350px);}
+	@media(min-width: 1200px) { width: calc(100% - 550px);}
+	}
