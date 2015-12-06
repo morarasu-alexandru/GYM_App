@@ -31,8 +31,8 @@ module.exports = React.createClass({
 		<nav className="nav">
 			<ul className="nav_ul">
 				<li className="nav_li"><Link to="/" className="btn btn-primary a" >Home</Link></li>
-				<li className="nav_li"><Link to="Add_Workout" className="btn btn-primary a" >Add workout</Link></li>
-				<li className="nav_li"><Link to="History" className="btn btn-primary a" >History</Link></li>
+				<li className="nav_li"><Link to="adauga_antrenament" className="btn btn-primary a" >Adauga <br/> antrenament </Link></li>
+				<li className="nav_li"><Link to="History" className="btn btn-primary a" >Istoric</Link></li>
 			</ul>
 		</nav>
 		{this.props.children}
