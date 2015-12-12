@@ -5,8 +5,8 @@ $nav_text_color: #aad398;
 $nav_text_hover: #55e4d4;
 $nav_text_active: #57fae8;
 
-$main_margin_high: 10%;
-$main_margin_mediu: 8%;
+$main_margin_high: 9%;
+$main_margin_mediu: 7%;
 $main_margin_low: 5%;
 
 .black {
@@ -50,8 +50,9 @@ $main_margin_low: 5%;
 		@media(min-width: 900px) { width: calc(100% - 270px);}
 	@media(min-width: 1100px) { width: calc(100% - 350px);}
 	@media(min-width: 1200px) { width: calc(100% - 550px);}
-		.title { display: block; width: 100%; height: 50px; line-height: 1.5em; font-size: 28px; text-align: center; background: blue; }
+		.title { display: block; width: 100%; height: 50px; line-height: 1.5em; font-size: 28px; font-weight: 700; text-align: center; }
 		.text {display: block; margin: 0 0 0 10px; font-size: 18px; float: left;  }
-		.SelectGr { display: block; float: left; width: 150px; font-size: 18px; margin: 0 0 0 10px; }
+		.SelectGr { display: block; float: left; width: 200px; font-size: 18px; margin: 0 0 0 10px; }
 	}
 		.grupeImg { display: block; float: right; margin: 20px 0 0 0; width: 200px; height: 300px; background: black;}
+		.buttonAddWorkout { display: block; float: right; clear: both; margin: 40px 230px 0 40px; width: 130px; height: 35px; color: $nav_text_active; font-size: 18px; }
