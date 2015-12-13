@@ -54,5 +54,7 @@ $main_margin_low: 5%;
 		.text {display: block; margin: 0 0 0 10px; font-size: 18px; float: left;  }
 		.SelectGr { display: block; float: left; width: 200px; font-size: 18px; margin: 0 0 0 10px; }
 	}
-		.grupeImg { display: block; float: right; margin: 20px 0 0 0; width: 200px; height: 300px; background: black;}
+		.grupeImg { display: block; float: right; margin: 20px 0 0 0; width: 200px; height: 300px; background: black; transition: all 0.333s ease-in-out 0s;}
 		.buttonAddWorkout { display: block; float: right; clear: both; margin: 40px 230px 0 40px; width: 130px; height: 35px; color: $nav_text_active; font-size: 18px; }
+		.piept { display: block; clear: both; float: left; margin: 20px 0 0 0; height: 300px; width: 400px; background: pink; }
+			.SelectEX { display: block; float: left; width: 300px; font-size: 18px; margin: 0 0 0 10px; }

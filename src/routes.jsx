@@ -12,7 +12,7 @@ module.exports = (
 	<Router history={new HasHistory}>
 		<Route path="/"	component={Mainpage}>
 			<Route path="adauga_antrenament" component={AddWorkout} />
-			<Route path="History" component={History} />
+			<Route path="history" component={History} />
 		</Route>
 		</Router>
 );
