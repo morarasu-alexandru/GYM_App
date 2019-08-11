@@ -6,13 +6,32 @@ module.exports = React.createClass({
 			return {
 				grupa: "Selecteaza-grupa",
 				exercitiu: "",
-				set: ""
+				seturi: "3"
 			}
 		},
 	handleChange: function() {
 		this.setState({grupa: event.target.value});
+		console.log(this.state.grupa)
 	},
-		render: function () {
+	handleChangeSet: function() {
+		this.setState({seturi: event.target.value});
+		console.log(this.state.seturi)
+	},
+	handleChangeExp: function () {
+		this.setState({exercitiu: event.target.value});
+		console.log(this.state.exercitiu)
+	},
+	handleClick: function() {
+		if(this.state.grupa!="Selecteaza-grupa") {this.props.itemsStore.push({
+			grupa: this.state.grupa,
+			exercitiu: this.state.exercitiu,
+			seturi: this.state.seturi
+		});
+
+			this.setState({grupa: "Selecteaza-grupa"})
+		} else {alert("trebuie sa selectezi o grupa mai intai!")}
+	},
+	render: function () {
 		return <div>
 			<label className="LabelGr">Selecteaza grupa:</label>
 			<select name="select" value={this.state.grupa} onChange={this.handleChange} className="form-control SelectGr">
@@ -25,7 +44,7 @@ module.exports = React.createClass({
 			{this.piept()}
 			{this.numarset()}
 			{this.adaugaseturi()}
-			<button className="btn btn-info buttonAddWorkout" onClick={this.handlClick}>
+			<button className="btn btn-info buttonAddWorkout" onClick={this.handleClick}>
 				Salveaza
 			</button>
 		</div>
@@ -35,7 +54,7 @@ module.exports = React.createClass({
 			return <div className="exercitiu">
 				<label className="labelEX">Selecteaza exercitiu:</label>
 				<select name="select2" value={this.state.exercitiu} onChange={this.handleChangeExp} className="form-control SelectEX">
-					<option value="Impins din culcat cu haltera">Exercitiu</option>
+					<option value="">Exercitiu</option>
 					<option value="Impins din culcat cu haltera">Impins din culcat cu haltera</option>
 					<option value="Impins din înclinat cu haltera">Impins din înclinat cu haltera</option>
 					<option value="Impins din declinat cu haltera">Impins din declinat cu haltera</option>
@@ -51,7 +70,8 @@ module.exports = React.createClass({
 		if(this.state.exercitiu !== "") {
 			return <div className="seturi">
 				<label className="seturilabel">Numar seturi:</label>
-				<select name="select3" value={this.state.set} onchange={this.handleChangeSet} className="form-control seturinr">
+				<select name="select3" value={this.state.seturi} onchange={this.handleChangeSet} className="form-control seturinr">
+					<option value="">0</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
 					<option value="3">3</option>
@@ -70,21 +90,5 @@ module.exports = React.createClass({
 		} else {
 			return null
 		}
-	},
-	handleChangeSet: function () {
-		this.setState({set: event.target.value});
-		console.log(this.state.set)
-	},
-	handleChangeExp: function () {
-		this.setState({exercitiu: event.target.value});
-		console.log(this.state.exercitiu)
-	},
-	handlClick: function() {
-		if(this.state.grupa!="Selecteaza-grupa") {this.props.itemsStore.push({
-			grupa: this.state.grupa	});
-
-			this.setState({grupa: "Selecteaza-grupa"})
-		} else {alert("trebuie sa selectezi o grupa mai intai!")}
 	}
-
 });
